@@ -8,4 +8,19 @@ def longitud_palabra():
     elif len(palabra) > 8 :
         print("La palabra tiene " + str(len(palabra)) + " letras")
 
-longitud_palabra()
+def encontrar_cuadrante():
+    eje_x = int(input("Ingrese el eje x: "))
+    eje_y = int(input("Ingrese el eje y: "))
+
+    if eje_x == 0 and eje_y == 0:
+        print("Origen del plano cartesiano")
+    elif (eje_x > 0 and eje_y > 0):
+        print("El punto se encuentra en el cuadrante I")
+    elif (eje_y > 0 and eje_x < 0):
+        print("El punto se encuentra en el cuadrante II")
+    elif (eje_x < 0 and eje_y < 0):
+        print("El punto se encuentra en el cuandrante III")
+    elif (eje_x > 0 and eje_y < 0):
+        print("El punto se encuentra en el cuadrante IV")
+
+encontrar_cuadrante()
